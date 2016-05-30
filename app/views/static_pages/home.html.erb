@@ -1,7 +1,12 @@
-<% provide(:title, "Home") %>
     <h1>Sample App</h1>
     <p>
-      This is the home page for the
+      <%= @test = "tes te" %>
+      <br>
+      <% if @test.include?('test') %>
+        The string include "test"
+      <% else %>
+        The string is not include
+      <% end %>
       <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
       sample application.
     </p>
